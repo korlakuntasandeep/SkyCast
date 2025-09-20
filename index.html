@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <div class="weather-card">
+      <h2>🌍 Weather App</h2>
+      <div class="search-box">
+        <input type="text" id="city" placeholder="Enter city or town">
+        <button onclick="getCoordinates()">Search</button>
+      </div>
+      <div class="weather-info" id="weather-info">
+        <p>Enter a city/town to check the weather 🌎</p>
+      </div>
+      <div class="forecast" id="forecast">
+        <!-- 5-day forecast cards here -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

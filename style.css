@@ -1,0 +1,137 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #74ebd5, #ACB6E5);
+  transition: background 0.8s ease;
+}
+
+/* Glassmorphism card */
+.weather-card {
+  width: 400px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  color: white;
+  animation: fadeIn 1s ease;
+}
+
+.weather-card h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Search box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 12px 0 0 12px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  border: none;
+  background: #ff9800;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 12px 12px 0;
+  transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+  background: #e68900;
+}
+
+/* Current weather */
+.weather-info {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.weather-info img {
+  width: 90px;
+  height: 90px;
+  margin: 10px 0;
+  animation: pop 0.8s ease;
+}
+
+/* Forecast */
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.forecast-card:hover {
+  transform: scale(1.05);
+}
+
+.forecast-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.forecast-card p {
+  font-size: 13px;
+  margin: 3px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes pop {
+  0% {transform: scale(0.7); opacity: 0;}
+  100% {transform: scale(1); opacity: 1;}
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+  .weather-card {
+    width: 90%;
+    padding: 20px;
+  }
+}
+.day .desc {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: 4px;
+  opacity: 0.9;
+}
