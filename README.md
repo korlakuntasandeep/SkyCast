@@ -4,7 +4,7 @@ SkyCast is a modern, stylish weather application developed using HTML, CSS, and 
 **Run Locally (HTML/CSS/JS)**
 Download or clone the SkyCast project:
 //cmd
-git clone https://github.com/your-username/skycast.git
+git clone https://github.com/korlakunta sandeep/skycast.git
 cd skycast
 Open index.html in any browser (Chrome, Firefox, Edge).
 On Windows: start index.html
